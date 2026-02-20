@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: flag-engine
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/featureflags
+    username: root
+    password: 1234
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
