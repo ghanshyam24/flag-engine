@@ -11,9 +11,16 @@ curl -X PUT "http://localhost:8080/features/dark_mode/default?enabled=true"
 curl -X PUT "http://localhost:8080/features/dark_mode/users/user1?enabled=true"
 
 curl -X PUT "http://localhost:8080/featgures/dark_mode/users/user1?enabled=true"
+
 curl -X PUT "http://localhost:8080/features/dark_mode/groups/beta?enabled=true"
+
 curl -X PUT "http://localhost:8080/features/dark_mode/regions/us-east?enabled=true"
+
 curl -X DELETE "http://localhost:8080/features/dark_mode/users/user1"
+
 curl -X DELETE "http://localhost:8080/features/dark_mode/groups/beta"
+
 curl -X DELETE "http://localhost:8080/features/dark_mode/regions/us-east"
+
 curl -X GET "http://localhost:8080/features/dark_mode/evaluate?userId=user1&groupName=beta&region=us-east"
+
